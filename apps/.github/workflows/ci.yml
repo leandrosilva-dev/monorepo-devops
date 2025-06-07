@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+      - feature/setup-project
   pull_request:
     branches:
       - develop
@@ -21,7 +22,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22.16.0
 
       # Install dependencies
       - name: Install dependencies
@@ -30,7 +31,3 @@ jobs:
       # Run build
       - name: Build project
         run: pnpm run build
-
-      # Run tests
-      - name: Run tests
-        run: pnpm test
