@@ -29,6 +29,9 @@ jobs:
       - name: Set environment variables
         run: echo "ENVIRONMENT=${{ matrix.environment }}" >> $GITHUB_ENV
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
         run: |
           cd apps/person-api
