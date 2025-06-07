@@ -3,10 +3,10 @@ name: CI/CD Pipeline for Person API
 on:
   push:
     branches:
-      - main
+      - feature/github_actions
   pull_request:
     branches:
-      - main
+      - feature/github_actions
   workflow_dispatch:
 
 jobs:
