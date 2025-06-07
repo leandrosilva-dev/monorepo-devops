@@ -42,13 +42,6 @@ jobs:
           cd apps/person-api
           pnpm build
 
-      - name: Run the application
-        run: |
-          cd apps/person-api
-          pnpm start
-        env:
-          NODE_ENV: ${{ matrix.environment }}
-
       - name: Placeholder for Helm integration
         if: ${{ matrix.environment == 'production' }}
         run: echo "Helm integration will be added here for production environment."
