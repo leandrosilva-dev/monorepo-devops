@@ -1,0 +1,28 @@
+{
+  "name": "devops",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
+    "syncpack": "^13.0.0",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.3"
+  },
+  "license": "ISC",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "prepare": "husky",
+    "test": "echo 1",
+    "lint": "turbo lint",
+    "format": "turbo format"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  }
+}
